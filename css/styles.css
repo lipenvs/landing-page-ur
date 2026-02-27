@@ -1,0 +1,152 @@
+/* ── Base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ── Hero canvas ── */
+#starfield-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Header divider line (strong center, fading at edges) ── */
+.header-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(156, 156, 156, 0.15) 15%,
+    rgba(156, 156, 156, 0.7) 40%,
+    #9C9C9C 50%,
+    rgba(156, 156, 156, 0.7) 60%,
+    rgba(156, 156, 156, 0.15) 85%,
+    transparent 100%
+  );
+}
+
+/* ── Nav links ── */
+.nav-link {
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* ── FAQ accordion ── */
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+}
+
+.faq-chevron {
+  transition: transform 0.3s ease;
+}
+
+.faq-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  background-color: #7C3AED;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: #6D28D9;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.4), 0 0 30px rgba(124, 58, 237, 0.2);
+}
+
+.btn-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+  background: transparent;
+}
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Feature card ── */
+.feature-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  color: #ffffff;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.feature-card:hover {
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.1);
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+/* ── Video placeholder ── */
+.video-placeholder {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Footer link styles ── */
+.footer-link {
+  color: #9CA3AF;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: white;
+}
+
+/* ── Mobile: hero buttons full width ── */
+@media (max-width: 639px) {
+  #hero .btn-primary,
+  #hero .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
