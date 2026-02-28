@@ -27,11 +27,10 @@
 
   const METEOR_INTERVAL_MIN = 5000;
   const METEOR_INTERVAL_MAX = 10000;
-  const METEOR_SPEED = 2;             // much slower
-  const METEOR_LENGTH = 250;          // long tail
+  const METEOR_SPEED = 2;
+  const METEOR_LENGTH = 250;
   const METEOR_THICKNESS = 1.2;
 
-  // ── Resize ──
   function resize() {
     const hero = document.getElementById('hero');
     if (!hero) return;
@@ -40,10 +39,9 @@
     height = canvas.height = rect.height;
   }
 
-  // ── Create stars ──
   function getStarCount() {
     const area = width * height;
-    const refArea = 1920 * 1080; // desktop reference
+    const refArea = 1920 * 1080;
     return Math.round(STAR_COUNT * Math.min(area / refArea, 1));
   }
 
