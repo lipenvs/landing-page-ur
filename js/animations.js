@@ -53,6 +53,20 @@
     ease: 'power3.out',
   });
 
+  // ── "Sua Jornada" section header: fade up ──
+  gsap.from('#features .mb-12 > *', {
+    scrollTrigger: {
+      trigger: '#features .mb-12',
+      start: 'top 85%',
+      toggleActions: 'play none none none',
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: 'power3.out',
+  });
+
   // ── Feature cards: stagger in ──
   gsap.from('.feature-card', {
     scrollTrigger: {
