@@ -1,12 +1,20 @@
-/* ── Base ── */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #7C3AED;
+  --color-brand-purple-hover: #6D28D9;
+  --color-brand-dark: #1A1A1D;
+  --color-brand-card: #F7F7FB;
+  --color-brand-card-border: #E5E5EE;
+  --color-brand-blue: #51A0FF;
+  --font-sans: 'Inter', system-ui, sans-serif;
 }
 
-body {
-  overflow-x: hidden;
+/* ── Base ── */
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 /* ── Custom scrollbar ── */
