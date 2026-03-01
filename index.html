@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Universo Rust — Aprenda Rust em português</title>
-  <meta name="description" content="Aprenda Rust em português com o livro oficial traduzido gratuitamente e uma comunidade ativa de desenvolvedores. Recursos gratuitos para iniciantes e experientes." />
+  <meta name="description"
+    content="Aprenda Rust em português com o livro oficial traduzido gratuitamente e uma comunidade ativa de desenvolvedores. Recursos gratuitos para iniciantes e experientes." />
+  <link rel="icon" href="assets/favicon.ico" sizes="32x32" />
   <link rel="stylesheet" href="css/output.css" />
 </head>
 
@@ -44,270 +46,275 @@
   </header>
 
   <main>
-  <section class="relative overflow-hidden" id="hero">
-    <canvas id="starfield-canvas"></canvas>
+    <section class="relative overflow-hidden" id="hero">
+      <canvas id="starfield-canvas"></canvas>
 
-    <div class="relative z-10 max-w-4xl mx-auto px-6 pt-40 pb-40 md:pt-48 md:pb-44 text-center">
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[0.95] tracking-tight mb-6">
-        Aprenda Rust<br />em português
-      </h1>
-      <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-        Leia gratuitamente o livro <em class="font-bold italic">The Rust Programming Language</em> em português e acesse
-        nossa comunidade para evoluir junto com outros rustáceos.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#livro" class="btn-primary">Começar pelo livro</a>
-        <a href="#comunidade" class="btn-outline">Explorar comunidade</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-brand-dark -mt-8 md:-mt-12" id="features">
-    <div class="max-w-5xl mx-auto px-6">
-
-      <div class="video-player mb-16 md:mb-32 hidden md:block">
-        <div class="video-player-inner">
-          <button class="video-play-btn" aria-label="Reproduzir vídeo">
-            <svg class="w-6 h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </button>
-        </div>
-        <div class="video-bottom-bar">
-          <div class="flex items-center gap-2">
-            <span class="video-live-dot"></span>
-            <span class="text-xs text-gray-400 font-medium">Conheça o Universo Rust</span>
-          </div>
-          <span class="text-xs text-gray-500 font-mono">03:24</span>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 pt-40 pb-40 md:pt-48 md:pb-44 text-center">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[0.95] tracking-tight mb-6">
+          Aprenda Rust<br />em português
+        </h1>
+        <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          Leia gratuitamente o livro <em class="font-bold italic">The Rust Programming Language</em> em português e
+          acesse
+          nossa comunidade para evoluir junto com outros rustáceos.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#livro" class="btn-primary">Começar pelo livro</a>
+          <a href="#comunidade" class="btn-outline">Explorar comunidade</a>
         </div>
       </div>
+    </section>
 
-    </div>
+    <section class="bg-brand-dark -mt-8 md:-mt-12" id="features">
+      <div class="max-w-5xl mx-auto px-6">
 
-    <div class="jornada-bg">
-      <div class="header-divider"></div>
-      <div class="max-w-5xl mx-auto px-6 py-16 md:py-32">
-
-        <div class="mb-12 md:mb-16">
-          <span class="text-sm font-semibold text-brand-blue tracking-wide uppercase block">Sua Jornada</span>
-          <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mt-4 mb-4">Tudo que você precisa<br>para começar
-            com Rust</h2>
-          <p class="text-gray-400 text-lg max-w-2xl leading-relaxed">Recursos gratuitos para aprender, praticar e se
-            conectar com a comunidade.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6">
-
-          <div class="feature-card flex flex-col" id="comunidade">
-            <div class="flex items-center gap-2 mb-4">
-              <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+        <div class="video-player mb-16 md:mb-32 hidden md:block">
+          <div class="video-player-inner">
+            <button class="video-play-btn" aria-label="Reproduzir vídeo">
+              <svg class="w-6 h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
               </svg>
-              <span class="text-xs font-bold tracking-widest uppercase text-brand-blue">Comunidade</span>
-            </div>
-            <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4">Não estude Rust sozinho</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
-              Um espaço para discutir código, arquitetura e desafios reais com outros desenvolvedores.
-            </p>
-            <ul class="space-y-3 mb-14 text-sm text-gray-300">
-              <li class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                Discussões organizadas por tema
-              </li>
-              <li class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                Networking com devs que levam Rust a sério
-              </li>
-              <li class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                Ajuda para dúvidas e problemas reais
-              </li>
-            </ul>
-            <a href="#" class="feature-card-link mt-auto">
-              <span>ACESSAR COMUNIDADE</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
+            </button>
           </div>
-
-          <div class="feature-card flex flex-col" id="livro">
-            <div class="flex items-center gap-2 mb-4">
-              <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-              <span class="text-xs font-bold tracking-widest uppercase text-brand-blue">O Livro</span>
+          <div class="video-bottom-bar">
+            <div class="flex items-center gap-2">
+              <span class="video-live-dot"></span>
+              <span class="text-xs text-gray-400 font-medium">Conheça o Universo Rust</span>
             </div>
-            <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4">A Linguagem de
-              Programação Rust</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
-              A tradução organizada do principal livro da linguagem, acessível gratuitamente e sempre atualizada.
-            </p>
-            <ul class="space-y-3 mb-14 text-sm text-gray-300">
-              <li class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                Tradução fiel do The Rust Programming Language
-              </li>
-              <li class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                Conteúdo 100% gratuito e open-source
-              </li>
-              <li class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                Atualizado frequentemente pela comunidade
-              </li>
-            </ul>
-            <a href="#" class="feature-card-link mt-auto">
-              <span>COMEÇAR A LER</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
+            <span class="text-xs text-gray-500 font-mono">03:24</span>
           </div>
-
         </div>
 
       </div>
-      <div class="header-divider"></div>
-    </div>
 
-  </section>
+      <div class="jornada-bg">
+        <div class="header-divider"></div>
+        <div class="max-w-5xl mx-auto px-6 py-16 md:py-32">
 
-  <section class="bg-brand-dark pt-16 md:pt-24 pb-20 md:pb-28" id="faq">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="flex flex-col lg:flex-row lg:gap-16">
-
-        <div class="lg:w-1/3 mb-10 lg:mb-0 lg:sticky lg:top-24 lg:self-start">
-          <span class="text-xs font-bold tracking-widest uppercase text-brand-blue mb-4 block">FAQ</span>
-          <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">Perguntas frequentes</h2>
-        </div>
-
-        <div class="lg:w-2/3 divide-y divide-white/10">
-
-          <div class="faq-item">
-            <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
-              data-faq="0">
-              <div class="flex items-center gap-5">
-                <span class="text-sm font-mono text-white/40">01.</span>
-                <span class="text-base md:text-lg font-semibold text-white">O que é o Universo Rust?</span>
-              </div>
-              <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="faq-answer" id="faq-answer-0">
-              <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Universo Rust é uma comunidade de língua portuguesa
-                dedicada a aprender e compartilhar conhecimento sobre a linguagem Rust. Oferecemos o livro oficial
-                traduzido e um espaço para networking entre devs.</p>
-            </div>
+          <div class="mb-12 md:mb-16">
+            <span class="text-sm font-semibold text-brand-blue tracking-wide uppercase block">Sua Jornada</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mt-4 mb-4">Tudo que você precisa<br>para
+              começar
+              com Rust</h2>
+            <p class="text-gray-400 text-lg max-w-2xl leading-relaxed">Recursos gratuitos para aprender, praticar e se
+              conectar com a comunidade.</p>
           </div>
 
-          <div class="faq-item">
-            <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
-              data-faq="1">
-              <div class="flex items-center gap-5">
-                <span class="text-sm font-mono text-white/40">02.</span>
-                <span class="text-base md:text-lg font-semibold text-white">O livro é realmente gratuito?</span>
-              </div>
-              <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="faq-answer" id="faq-answer-1">
-              <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Sim! A tradução do livro oficial do Rust é totalmente
-                gratuita
-                e acessível a qualquer pessoa. Nosso objetivo é democratizar o acesso ao conhecimento de Rust em
-                português.</p>
-            </div>
-          </div>
+          <div class="grid md:grid-cols-2 gap-6">
 
-          <div class="faq-item">
-            <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
-              data-faq="2">
-              <div class="flex items-center gap-5">
-                <span class="text-sm font-mono text-white/40">03.</span>
-                <span class="text-base md:text-lg font-semibold text-white">Preciso ter experiência prévia com
-                  Rust?</span>
+            <div class="feature-card flex flex-col" id="comunidade">
+              <div class="flex items-center gap-2 mb-4">
+                <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="text-xs font-bold tracking-widest uppercase text-brand-blue">Comunidade</span>
               </div>
-              <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="faq-answer" id="faq-answer-2">
-              <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Não. O livro começa do zero e a comunidade é aberta a
-                iniciantes. Você pode aprender no seu ritmo com o suporte de outros devs que também estão na jornada.
+              <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4">Não estude Rust sozinho</h3>
+              <p class="text-gray-300 mb-6 leading-relaxed">
+                Um espaço para discutir código, arquitetura e desafios reais com outros desenvolvedores.
               </p>
+              <ul class="space-y-3 mb-14 text-sm text-gray-300">
+                <li class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Discussões organizadas por tema
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Networking com devs que levam Rust a sério
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Ajuda para dúvidas e problemas reais
+                </li>
+              </ul>
+              <a href="#" class="feature-card-link mt-auto">
+                <span>ACESSAR COMUNIDADE</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
-              data-faq="3">
-              <div class="flex items-center gap-5">
-                <span class="text-sm font-mono text-white/40">04.</span>
-                <span class="text-base md:text-lg font-semibold text-white">Como funciona a comunidade?</span>
+            <div class="feature-card flex flex-col" id="livro">
+              <div class="flex items-center gap-2 mb-4">
+                <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <span class="text-xs font-bold tracking-widest uppercase text-brand-blue">O Livro</span>
               </div>
-              <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="faq-answer" id="faq-answer-3">
-              <p class="pb-5 pl-10 text-gray-400 leading-relaxed">A comunidade é organizada por temas e canais de
-                discussão.
-                Você pode tirar dúvidas, compartilhar projetos, participar de desafios e fazer networking com outros
-                rustáceos.</p>
+              <h3 class="text-2xl md:text-3xl font-extrabold leading-tight mb-4">A Linguagem de
+                Programação Rust</h3>
+              <p class="text-gray-300 mb-6 leading-relaxed">
+                A tradução organizada do principal livro da linguagem, acessível gratuitamente e sempre atualizada.
+              </p>
+              <ul class="space-y-3 mb-14 text-sm text-gray-300">
+                <li class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Tradução fiel do The Rust Programming Language
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Conteúdo 100% gratuito e open-source
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Atualizado frequentemente pela comunidade
+                </li>
+              </ul>
+              <a href="#" class="feature-card-link mt-auto">
+                <span>COMEÇAR A LER</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
-              data-faq="4">
-              <div class="flex items-center gap-5">
-                <span class="text-sm font-mono text-white/40">05.</span>
-                <span class="text-base md:text-lg font-semibold text-white">A tradução está atualizada?</span>
-              </div>
-              <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div class="faq-answer" id="faq-answer-4">
-              <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Sim. A tradução acompanha as atualizações oficiais do
-                Rust
-                Book e é constantemente revisada pela comunidade para garantir qualidade e precisão.</p>
-            </div>
           </div>
 
         </div>
+        <div class="header-divider"></div>
       </div>
-    </div>
-  </section>
+
+    </section>
+
+    <section class="bg-brand-dark pt-16 md:pt-24 pb-20 md:pb-28" id="faq">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row lg:gap-16">
+
+          <div class="lg:w-1/3 mb-10 lg:mb-0 lg:sticky lg:top-24 lg:self-start">
+            <span class="text-xs font-bold tracking-widest uppercase text-brand-blue mb-4 block">FAQ</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">Perguntas frequentes</h2>
+          </div>
+
+          <div class="lg:w-2/3 divide-y divide-white/10">
+
+            <div class="faq-item">
+              <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
+                data-faq="0">
+                <div class="flex items-center gap-5">
+                  <span class="text-sm font-mono text-white/40">01.</span>
+                  <span class="text-base md:text-lg font-semibold text-white">O que é o Universo Rust?</span>
+                </div>
+                <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer" id="faq-answer-0">
+                <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Universo Rust é uma comunidade de língua portuguesa
+                  dedicada a aprender e compartilhar conhecimento sobre a linguagem Rust. Oferecemos o livro oficial
+                  traduzido e um espaço para networking entre devs.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
+                data-faq="1">
+                <div class="flex items-center gap-5">
+                  <span class="text-sm font-mono text-white/40">02.</span>
+                  <span class="text-base md:text-lg font-semibold text-white">O livro é realmente gratuito?</span>
+                </div>
+                <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer" id="faq-answer-1">
+                <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Sim! A tradução do livro oficial do Rust é
+                  totalmente
+                  gratuita
+                  e acessível a qualquer pessoa. Nosso objetivo é democratizar o acesso ao conhecimento de Rust em
+                  português.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
+                data-faq="2">
+                <div class="flex items-center gap-5">
+                  <span class="text-sm font-mono text-white/40">03.</span>
+                  <span class="text-base md:text-lg font-semibold text-white">Preciso ter experiência prévia com
+                    Rust?</span>
+                </div>
+                <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer" id="faq-answer-2">
+                <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Não. O livro começa do zero e a comunidade é aberta
+                  a
+                  iniciantes. Você pode aprender no seu ritmo com o suporte de outros devs que também estão na jornada.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
+                data-faq="3">
+                <div class="flex items-center gap-5">
+                  <span class="text-sm font-mono text-white/40">04.</span>
+                  <span class="text-base md:text-lg font-semibold text-white">Como funciona a comunidade?</span>
+                </div>
+                <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer" id="faq-answer-3">
+                <p class="pb-5 pl-10 text-gray-400 leading-relaxed">A comunidade é organizada por temas e canais de
+                  discussão.
+                  Você pode tirar dúvidas, compartilhar projetos, participar de desafios e fazer networking com outros
+                  rustáceos.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="w-full flex items-center justify-between py-5 text-left focus:outline-none group"
+                data-faq="4">
+                <div class="flex items-center gap-5">
+                  <span class="text-sm font-mono text-white/40">05.</span>
+                  <span class="text-base md:text-lg font-semibold text-white">A tradução está atualizada?</span>
+                </div>
+                <svg class="faq-chevron w-5 h-5 text-gray-500 flex-shrink-0 ml-4" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer" id="faq-answer-4">
+                <p class="pb-5 pl-10 text-gray-400 leading-relaxed">Sim. A tradução acompanha as atualizações oficiais
+                  do
+                  Rust
+                  Book e é constantemente revisada pela comunidade para garantir qualidade e precisão.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
